@@ -1,0 +1,83 @@
+-- Member 1 Data - Users & Organizations
+
+-- PART 1: USERS TABLE (50 rows: 30 Freelancers, 20 Clients)
+
+INSERT INTO Users (user_id, full_name, email, phone, city, role, linkedin_url, trust_score) VALUES
+-- Freelancers (1 to 30)
+(1, 'Aman Sharma', 'aman.sharma123@gmail.com', '9812345670', 'Mohali', 'Freelancer', 'https://linkedin.com/in/aman-sharma-mohali', 85),
+(2, 'Priya Kaur', 'priya.kaur.92@gmail.com', '9723456781', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/priya-kaur-chd', 90),
+(3, 'Simranjeet Singh', 'simranjeet.singh45@gmail.com', '9634567892', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/simranjeet-singh', 78),
+(4, 'Rohit Verma', 'rohit.verma.dev@gmail.com', '9545678903', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/rohit-verma-blr', 88),
+(5, 'Neha Sharma', 'neha.sharma.ux@gmail.com', '8856789014', 'Mohali', 'Freelancer', 'https://linkedin.com/in/neha-sharma-ux', 92),
+(6, 'Karan Malhotra', 'karan.malhotra77@gmail.com', '8967890125', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/karan-malhotra', 74),
+(7, 'Ananya Sen', 'ananya.sen.code@gmail.com', '9478901236', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/ananya-sen', 95),
+(8, 'Vikram Batra', 'vikram.batra99@gmail.com', '9389012347', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/vikram-batra', 81),
+(9, 'Pooja Hegde', 'pooja.hegde.ui@gmail.com', '9290123458', 'Mohali', 'Freelancer', 'https://linkedin.com/in/pooja-hegde', 83),
+(10, 'Rahul Nair', 'rahul.nair.tech@gmail.com', '9101234569', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/rahul-nair', 79),
+(11, 'Meenakshi Iyer', 'meenakshi.iyer21@gmail.com', '9811223340', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/meenakshi-iyer', 87),
+(12, 'Aditya Roy', 'aditya.roy.web@gmail.com', '9722334451', 'Mohali', 'Freelancer', 'https://linkedin.com/in/aditya-roy', 80),
+(13, 'Divya Sundaram', 'divya.sundaram33@gmail.com', '9633445562', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/divya-sundaram', 91),
+(14, 'Manish Pandey', 'manish.pandey.cloud@gmail.com', '9544556673', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/manish-pandey', 76),
+(15, 'Shreya Ghoshal', 'shreya.ghoshal.art@gmail.com', '8855667784', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/shreya-ghoshal', 89),
+(16, 'Deepak Chahar', 'deepak.chahar.qa@gmail.com', '8966778895', 'Mohali', 'Freelancer', 'https://linkedin.com/in/deepak-chahar', 84),
+(17, 'Kritika Sanon', 'kritika.sanon.app@gmail.com', '9477889906', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/kritika-sanon', 93),
+(18, 'Siddharth Malhotra', 'siddharth.m.code@gmail.com', '9388990017', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/siddharth-m', 75),
+(19, 'Ritu Kumar', 'ritu.kumar.design@gmail.com', '9299001128', 'Mohali', 'Freelancer', 'https://linkedin.com/in/ritu-kumar', 86),
+(20, 'Varun Dhawan', 'varun.dhawan.js@gmail.com', '9100112239', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/varun-dhawan', 82),
+(21, 'Tanvi Azmi', 'tanvi.azmi.data@gmail.com', '9811447700', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/tanvi-azmi', 77),
+(22, 'Arjun Rampal', 'arjun.rampal.py@gmail.com', '9722558811', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/arjun-rampal', 83),
+(23, 'Swara Bhasker', 'swara.bhasker.sec@gmail.com', '9633669922', 'Mohali', 'Freelancer', 'https://linkedin.com/in/swara-bhasker', 88),
+(24, 'Nikhil Kamath', 'nikhil.kamath.fin@gmail.com', '9544770033', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/nikhil-kamath', 94),
+(25, 'Geeta Phogat', 'geeta.phogat.qa@gmail.com', '8855881144', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/geeta-phogat', 79),
+(26, 'Yuvraj Singh', 'yuvraj.singh.net@gmail.com', '8966992255', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/yuvraj-singh', 81),
+(27, 'Sanya Malhotra', 'sanya.malhotra.mob@gmail.com', '9477003366', 'Mohali', 'Freelancer', 'https://linkedin.com/in/sanya-malhotra', 90),
+(28, 'Mohit Suri', 'mohit.suri.full@gmail.com', '9388114477', 'Bangalore', 'Freelancer', 'https://linkedin.com/in/mohit-suri', 72),
+(29, 'Nidhi Razdan', 'nidhi.razdan.content@gmail.com', '9299225588', 'Chandigarh', 'Freelancer', 'https://linkedin.com/in/nidhi-razdan', 85),
+(30, 'Abhinav Bindra', 'abhinav.bindra.iot@gmail.com', '9100336699', 'Panchkula', 'Freelancer', 'https://linkedin.com/in/abhinav-bindra', 92),
+
+-- Clients (31 to 50: Company Managers)
+(31, 'Harsh Vardhan', 'harsh.vardhan.mgr@gmail.com', '9815551234', 'Bangalore', 'Client', 'https://linkedin.com/in/harsh-vardhan-mgr', 89),
+(32, 'Sameer Deshmukh', 'sameer.deshmukh.lead@gmail.com', '9726662345', 'Gurgaon', 'Client', 'https://linkedin.com/in/sameer-deshmukh-lead', 84),
+(33, 'Pallavi Joshi', 'pallavi.joshi.hr@gmail.com', '9637773456', 'Mohali', 'Client', 'https://linkedin.com/in/pallavi-joshi-hr', 91),
+(34, 'Raghav Chadha', 'raghav.chadha.dir@gmail.com', '9548884567', 'Chandigarh', 'Client', 'https://linkedin.com/in/raghav-chadha-dir', 78),
+(35, 'Shweta Tiwari', 'shweta.tiwari.exec@gmail.com', '8859995678', 'Bangalore', 'Client', 'https://linkedin.com/in/shweta-tiwari-exec', 95),
+(36, 'Naveen Jindal', 'naveen.jindal.mgr@gmail.com', '8961116789', 'Gurgaon', 'Client', 'https://linkedin.com/in/naveen-jindal-mgr', 82),
+(37, 'Bhumika Chawla', 'bhumika.chawla.ceo@gmail.com', '9472227890', 'Bangalore', 'Client', 'https://linkedin.com/in/bhumika-chawla-ceo', 93),
+(38, 'Alok Nath', 'alok.nath.head@gmail.com', '9383338901', 'Mohali', 'Client', 'https://linkedin.com/in/alok-nath-head', 90),
+(39, 'Sneha Ullal', 'sneha.ullal.mgr@gmail.com', '9294449012', 'Chandigarh', 'Client', 'https://linkedin.com/in/sneha-ullal-mgr', 88),
+(40, 'Karan Grover', 'karan.grover.dir@gmail.com', '9105550123', 'Bangalore', 'Client', 'https://linkedin.com/in/karan-grover-dir', 86),
+(41, 'Aarti Chhabria', 'aarti.chhabria.lead@gmail.com', '9819811234', 'Gurgaon', 'Client', 'https://linkedin.com/in/aarti-chhabria-lead', 87),
+(42, 'Zayed Khan', 'zayed.khan.mgr@gmail.com', '9728722345', 'Mohali', 'Client', 'https://linkedin.com/in/zayed-khan-mgr', 81),
+(43, 'Rimi Sen', 'rimi.sen.exec@gmail.com', '9637633456', 'Chandigarh', 'Client', 'https://linkedin.com/in/rimi-sen-exec', 92),
+(44, 'Aftab Shivdasani', 'aftab.shivdasani.dir@gmail.com', '9546544567', 'Bangalore', 'Client', 'https://linkedin.com/in/aftab-shivdasani-dir', 94),
+(45, 'Amrita Rao', 'amrita.rao.mgr@gmail.com', '8855455678', 'Gurgaon', 'Client', 'https://linkedin.com/in/amrita-rao-mgr', 89),
+(46, 'Tusshar Kapoor', 'tusshar.kapoor.head@gmail.com', '8964366789', 'Mohali', 'Client', 'https://linkedin.com/in/tusshar-kapoor-head', 83),
+(47, 'Esha Deol', 'esha.deol.lead@gmail.com', '9473277890', 'Chandigarh', 'Client', 'https://linkedin.com/in/esha-deol-lead', 85),
+(48, 'Fardeen Khan', 'fardeen.khan.mgr@gmail.com', '9382188901', 'Bangalore', 'Client', 'https://linkedin.com/in/fardeen-khan-mgr', 79),
+(49, 'Dia Mirza', 'dia.mirza.dir@gmail.com', '9291099012', 'Gurgaon', 'Client', 'https://linkedin.com/in/dia-mirza-dir', 91),
+(50, 'Uday Chopra', 'uday.chopra.ceo@gmail.com', '9109988123', 'Bangalore', 'Client', 'https://linkedin.com/in/uday-chopra-ceo', 95);
+
+
+-- PART 2: ORGANIZATIONS TABLE (20 rows)
+
+INSERT INTO Organizations (org_id, org_name, industry, gst_no, website, city, owner_id) VALUES
+(1, 'TechSprint Solutions', 'Information Technology', '03AAACT7421R1Z8', 'https://www.techsprint-demo.com', 'Bangalore', 31),
+(2, 'InfoLoom Systems', 'Information Technology', '03AAACI8592K1Z3', 'https://www.infoloom-demo.com', 'Bangalore', 32),
+(3, 'CodeCraft Labs', 'Information Technology', '03AAACW6347M1Z9', 'https://www.codecraft-demo.com', 'Bangalore', 33),
+(4, 'SearchGrid Technologies', 'Internet & Technology', '03AACCG2984B1Z2', 'https://www.searchgrid-demo.com', 'Gurgaon', 34),
+(5, 'CloudNest Softwares', 'Software Development', '03AACCM5168P1Z5', 'https://www.cloudnest-demo.com', 'Bangalore', 35),
+(6, 'Jugnoo (Jetsynthesys)', 'Hyperlocal Logistics', '03AAACJ4829T1Z1', 'https://www.jugnoo.in', 'Chandigarh', 36),
+(7, 'Code Brew Labs', 'Software Development', '03AAACC9153W1Z7', 'https://www.codebrew.com', 'Mohali', 37),
+(8, 'Winni', 'E-Commerce / Gifting', '03AAACW1748D1Z4', 'https://www.winni.in', 'Panchkula', 38),
+(9, 'Finvasia', 'Fintech & Financial Services', '03AAACF6832H1Z6', 'https://www.finvasia.com', 'Mohali', 39),
+(10, 'SmartData Enterprises', 'IT Services', '03AAACS3205Q1ZA', 'https://www.smartdatainc.com', 'Mohali', 40),
+(11, 'CodeKraft Solutions', 'Software Consulting', '03AAACK5891L1ZB', 'https://www.codekraft-demo.com', 'Chandigarh', 41),
+(12, 'Vortex Tech Labs', 'AI & Machine Learning', '03AAACV7410E1ZC', 'https://www.vortextech-demo.com', 'Mohali', 42),
+(13, 'NexusCloud Systems', 'Cloud Computing', '03AAACN2963X1ZD', 'https://www.nexuscloud-demo.com', 'Panchkula', 43),
+(14, 'PixelPerfect Design Hub', 'UI/UX & Digital Media', '03AAACP8304Y1ZE', 'https://www.pixelperfect-demo.com', 'Chandigarh', 44),
+(15, 'Apex Cyber Security', 'Information Security', '03AAACA6152F1ZF', 'https://www.apexcyber-demo.com', 'Mohali', 45),
+(16, 'InnoVate Mobility', 'Transport Tech', '03AAACI9048G1ZG', 'https://www.innovatemobility-demo.com', 'Chandigarh', 46),
+(17, 'DataPulse Analytics', 'Big Data & BI', '03AAACD3715J1ZH', 'https://www.datapulse-demo.com', 'Bangalore', 47),
+(18, 'AlphaByte Technologies', 'Full Stack Development', '03AAACA4826S1ZI', 'https://www.alphabyte-demo.com', 'Mohali', 48),
+(19, 'Zenith Web Solutions', 'Web Development', '03AAACZ1593V1ZJ', 'https://www.zenithweb-demo.com', 'Panchkula', 49),
+(20, 'PrimeLogix Solutions', 'Enterprise Software', '03AAACP7632N1ZK', 'https://www.primelogix-demo.com', 'Chandigarh', 50);
